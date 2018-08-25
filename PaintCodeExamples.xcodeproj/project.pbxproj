@@ -19,6 +19,7 @@
 		702AF296213115C60020F432 /* AnimatorKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 702AF294213115C60020F432 /* AnimatorKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		702AF299213127F90020F432 /* LogoLoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AF298213127F90020F432 /* LogoLoaderViewController.swift */; };
 		702AF29B21312BD00020F432 /* MultiPartImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AF29A21312BD00020F432 /* MultiPartImagesViewController.swift */; };
+		705BB5DB21321471008E0C71 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705BB5DA21321471008E0C71 /* IntroductionViewController.swift */; };
 		70C43BBE2130DEFC00323904 /* ExamplesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C43BBD2130DEFC00323904 /* ExamplesPageViewController.swift */; };
 		70C43BC42130E2A000323904 /* StarRatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C43BC32130E2A000323904 /* StarRatingViewController.swift */; };
 		70CF5E38213176B8008126F3 /* ActiveCallKeyPadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF5E37213176B8008126F3 /* ActiveCallKeyPadViewController.swift */; };
@@ -68,6 +69,7 @@
 		702AF294213115C60020F432 /* AnimatorKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnimatorKit.framework; path = Carthage/Build/iOS/AnimatorKit.framework; sourceTree = "<group>"; };
 		702AF298213127F90020F432 /* LogoLoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoLoaderViewController.swift; sourceTree = "<group>"; };
 		702AF29A21312BD00020F432 /* MultiPartImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPartImagesViewController.swift; sourceTree = "<group>"; };
+		705BB5DA21321471008E0C71 /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
 		70C43BBD2130DEFC00323904 /* ExamplesPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesPageViewController.swift; sourceTree = "<group>"; };
 		70C43BC32130E2A000323904 /* StarRatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingViewController.swift; sourceTree = "<group>"; };
 		70CF5E37213176B8008126F3 /* ActiveCallKeyPadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveCallKeyPadViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				70EB5E2F213152420086DEEE /* DialPadViewController.swift */,
 				70CF5E37213176B8008126F3 /* ActiveCallKeyPadViewController.swift */,
 				70CF5E392131796B008126F3 /* ModernDialPadViewController.swift */,
+				705BB5DA21321471008E0C71 /* IntroductionViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			files = (
 				70CF5E38213176B8008126F3 /* ActiveCallKeyPadViewController.swift in Sources */,
 				70CF5E3A2131796B008126F3 /* ModernDialPadViewController.swift in Sources */,
+				705BB5DB21321471008E0C71 /* IntroductionViewController.swift in Sources */,
 				702AF2902131037C0020F432 /* Examples.swift in Sources */,
 				70C43BBE2130DEFC00323904 /* ExamplesPageViewController.swift in Sources */,
 				702AF293213114530020F432 /* StatusBarViewController.swift in Sources */,

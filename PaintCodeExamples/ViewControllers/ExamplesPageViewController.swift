@@ -11,6 +11,7 @@ import UIKit
 class ExamplesPageViewController: UIPageViewController {
 	
 	private(set) lazy var pages: [UIViewController] = [
+		loadViewController(withIdentifier: "Intro"),
 		loadViewController(withIdentifier: "StarRating"),
 		loadViewController(withIdentifier: "StatusBarIcons"),
 		loadViewController(withIdentifier: "LogoLoader"),
