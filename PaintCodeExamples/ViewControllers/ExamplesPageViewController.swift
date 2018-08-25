@@ -14,7 +14,10 @@ class ExamplesPageViewController: UIPageViewController {
 		loadViewController(withIdentifier: "StarRating"),
 		loadViewController(withIdentifier: "StatusBarIcons"),
 		loadViewController(withIdentifier: "LogoLoader"),
-		loadViewController(withIdentifier: "MultiPartImages")
+		loadViewController(withIdentifier: "MultiPartImages"),
+		loadViewController(withIdentifier: "DialPadNumber"),
+		loadViewController(withIdentifier: "ActiveCallKeyPad"),
+		loadViewController(withIdentifier: "ModernDialPad")
 	]
 	
 	override func viewDidLoad() {

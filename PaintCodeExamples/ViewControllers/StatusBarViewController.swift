@@ -52,6 +52,7 @@ class StatusBarViewController: UIViewController {
 	
 	override func viewDidDisappear(_ animated: Bool) {
 		super.viewDidDisappear(animated)
+		print("Stop Animators")
 		dischargeAnimator.start()
 		chargeProgressAnimator.stop()
 		chargeAnimator.stop()
