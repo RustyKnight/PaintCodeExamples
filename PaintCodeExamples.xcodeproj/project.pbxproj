@@ -12,10 +12,15 @@
 		70290B2F2130CA350049CE4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70290B2E2130CA350049CE4F /* Assets.xcassets */; };
 		70290B322130CA350049CE4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70290B302130CA350049CE4F /* LaunchScreen.storyboard */; };
 		70290B3D2130CA360049CE4F /* PaintCodeExamplesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70290B3C2130CA360049CE4F /* PaintCodeExamplesUITests.swift */; };
+		702AF2902131037C0020F432 /* Examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AF28E2131037C0020F432 /* Examples.swift */; };
+		702AF2912131037C0020F432 /* StarKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AF28F2131037C0020F432 /* StarKit.swift */; };
+		702AF293213114530020F432 /* StatusBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AF292213114530020F432 /* StatusBarViewController.swift */; };
+		702AF295213115C60020F432 /* AnimatorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702AF294213115C60020F432 /* AnimatorKit.framework */; };
+		702AF296213115C60020F432 /* AnimatorKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 702AF294213115C60020F432 /* AnimatorKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		702AF299213127F90020F432 /* LogoLoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AF298213127F90020F432 /* LogoLoaderViewController.swift */; };
+		702AF29B21312BD00020F432 /* MultiPartImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AF29A21312BD00020F432 /* MultiPartImagesViewController.swift */; };
 		70C43BBE2130DEFC00323904 /* ExamplesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C43BBD2130DEFC00323904 /* ExamplesPageViewController.swift */; };
 		70C43BC42130E2A000323904 /* StarRatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C43BC32130E2A000323904 /* StarRatingViewController.swift */; };
-		70C43BC82130E35A00323904 /* StarKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C43BC62130E35A00323904 /* StarKit.swift */; };
-		70C43BC92130E35A00323904 /* Examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C43BC72130E35A00323904 /* Examples.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +33,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		702AF297213115C60020F432 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				702AF296213115C60020F432 /* AnimatorKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		70290B202130CA350049CE4F /* PaintCodeExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaintCodeExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70290B232130CA350049CE4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,10 +58,14 @@
 		70290B3C2130CA360049CE4F /* PaintCodeExamplesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintCodeExamplesUITests.swift; sourceTree = "<group>"; };
 		70290B3E2130CA360049CE4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70290B472130CAC60049CE4F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		702AF28E2131037C0020F432 /* Examples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Examples.swift; sourceTree = "<group>"; };
+		702AF28F2131037C0020F432 /* StarKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarKit.swift; sourceTree = "<group>"; };
+		702AF292213114530020F432 /* StatusBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarViewController.swift; sourceTree = "<group>"; };
+		702AF294213115C60020F432 /* AnimatorKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnimatorKit.framework; path = Carthage/Build/iOS/AnimatorKit.framework; sourceTree = "<group>"; };
+		702AF298213127F90020F432 /* LogoLoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoLoaderViewController.swift; sourceTree = "<group>"; };
+		702AF29A21312BD00020F432 /* MultiPartImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPartImagesViewController.swift; sourceTree = "<group>"; };
 		70C43BBD2130DEFC00323904 /* ExamplesPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesPageViewController.swift; sourceTree = "<group>"; };
 		70C43BC32130E2A000323904 /* StarRatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingViewController.swift; sourceTree = "<group>"; };
-		70C43BC62130E35A00323904 /* StarKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StarKit.swift; path = PaintCodeExamples/StyleKits/StarKit.swift; sourceTree = SOURCE_ROOT; };
-		70C43BC72130E35A00323904 /* Examples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Examples.swift; path = PaintCodeExamples/StyleKits/Examples.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				702AF295213115C60020F432 /* AnimatorKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +90,7 @@
 		70290B172130CA340049CE4F = {
 			isa = PBXGroup;
 			children = (
+				702AF294213115C60020F432 /* AnimatorKit.framework */,
 				70290B472130CAC60049CE4F /* README.md */,
 				70290B222130CA350049CE4F /* PaintCodeExamples */,
 				70290B3B2130CA360049CE4F /* PaintCodeExamplesUITests */,
@@ -85,10 +110,10 @@
 		70290B222130CA350049CE4F /* PaintCodeExamples */ = {
 			isa = PBXGroup;
 			children = (
-				70C43BC52130E34300323904 /* StyleKits */,
 				70C43BC12130E26000323904 /* Assets */,
 				70290B332130CA350049CE4F /* Info.plist */,
 				70C43BC22130E27200323904 /* Storyboards */,
+				702AF28D2131037C0020F432 /* StyleKits */,
 				70C43BC02130E24700323904 /* Support */,
 				70C43BBF2130E23200323904 /* ViewControllers */,
 			);
@@ -104,11 +129,23 @@
 			path = PaintCodeExamplesUITests;
 			sourceTree = "<group>";
 		};
+		702AF28D2131037C0020F432 /* StyleKits */ = {
+			isa = PBXGroup;
+			children = (
+				702AF28E2131037C0020F432 /* Examples.swift */,
+				702AF28F2131037C0020F432 /* StarKit.swift */,
+			);
+			path = StyleKits;
+			sourceTree = "<group>";
+		};
 		70C43BBF2130E23200323904 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				70C43BBD2130DEFC00323904 /* ExamplesPageViewController.swift */,
 				70C43BC32130E2A000323904 /* StarRatingViewController.swift */,
+				702AF292213114530020F432 /* StatusBarViewController.swift */,
+				702AF298213127F90020F432 /* LogoLoaderViewController.swift */,
+				702AF29A21312BD00020F432 /* MultiPartImagesViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -138,16 +175,6 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		70C43BC52130E34300323904 /* StyleKits */ = {
-			isa = PBXGroup;
-			children = (
-				70C43BC72130E35A00323904 /* Examples.swift */,
-				70C43BC62130E35A00323904 /* StarKit.swift */,
-			);
-			name = StyleKits;
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,6 +185,7 @@
 				70290B1C2130CA340049CE4F /* Sources */,
 				70290B1D2130CA340049CE4F /* Frameworks */,
 				70290B1E2130CA340049CE4F /* Resources */,
+				702AF297213115C60020F432 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,10 +277,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				702AF2902131037C0020F432 /* Examples.swift in Sources */,
 				70C43BBE2130DEFC00323904 /* ExamplesPageViewController.swift in Sources */,
+				702AF293213114530020F432 /* StatusBarViewController.swift in Sources */,
 				70290B242130CA350049CE4F /* AppDelegate.swift in Sources */,
-				70C43BC82130E35A00323904 /* StarKit.swift in Sources */,
-				70C43BC92130E35A00323904 /* Examples.swift in Sources */,
+				702AF299213127F90020F432 /* LogoLoaderViewController.swift in Sources */,
+				702AF29B21312BD00020F432 /* MultiPartImagesViewController.swift in Sources */,
+				702AF2912131037C0020F432 /* StarKit.swift in Sources */,
 				70C43BC42130E2A000323904 /* StarRatingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +448,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YWXH886EY3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PaintCodeExamples/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -435,6 +470,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YWXH886EY3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PaintCodeExamples/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

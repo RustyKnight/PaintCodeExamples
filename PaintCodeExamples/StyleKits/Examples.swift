@@ -230,7 +230,7 @@ public class Examples : NSObject {
             .font: UIFont.systemFont(ofSize: 48),
             .foregroundColor: textForegroundColor,
             .paragraphStyle: textStyle,
-            ] as [NSAttributedString.Key: Any]
+        ] as [NSAttributedString.Key: Any]
 
         let textTextHeight: CGFloat = textTextContent.boundingRect(with: CGSize(width: textRect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: textFontAttributes, context: nil).height
         context.saveGState()
@@ -2271,7 +2271,7 @@ public class Examples : NSObject {
         context.restoreGState()
     }
 
-    @objc dynamic public class func drawGlobeLoader(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 300, height: 300), resizing: ResizingBehavior = .aspectFit, cycleProgress: CGFloat = 0) {
+    @objc dynamic public class func drawLogoLoader(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 300, height: 300), resizing: ResizingBehavior = .aspectFit, cycleProgress: CGFloat = 0) {
         //// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
@@ -2283,7 +2283,7 @@ public class Examples : NSObject {
 
 
         //// Color Declarations
-        let yellow = UIColor(red: 0.957, green: 0.729, blue: 0.129, alpha: 1.000)
+        let yellow = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1.000)
         var yellowRedComponent: CGFloat = 1
         var yellowGreenComponent: CGFloat = 1
         var yellowBlueComponent: CGFloat = 1
@@ -2293,6 +2293,7 @@ public class Examples : NSObject {
         let yellowDark38 = UIColor(red: (yellowRedComponent * 0.62), green: (yellowGreenComponent * 0.62), blue: (yellowBlueComponent * 0.62), alpha: (yellow.cgColor.alpha * 0.62 + 0.38))
         let yellowDark50 = UIColor(red: (yellowRedComponent * 0.5), green: (yellowGreenComponent * 0.5), blue: (yellowBlueComponent * 0.5), alpha: (yellow.cgColor.alpha * 0.5 + 0.5))
         let yellowDark25 = UIColor(red: (yellowRedComponent * 0.75), green: (yellowGreenComponent * 0.75), blue: (yellowBlueComponent * 0.75), alpha: (yellow.cgColor.alpha * 0.75 + 0.25))
+        let appleGrey = UIColor(red: 0.451, green: 0.451, blue: 0.451, alpha: 1.000)
 
         //// Variable Declarations
         let cycleAngle: CGFloat = 360.0 / 16.0 * round(16 * -cycleProgress)
@@ -2441,6 +2442,36 @@ public class Examples : NSObject {
 
 
         context.restoreGState()
+
+
+        //// surface1
+
+
+        //// Group
+        //// surface
+        //// Bezier Drawing
+        let bezierPath = UIBezierPath()
+        bezierPath.move(to: CGPoint(x: 235.53, y: 193.2))
+        bezierPath.addCurve(to: CGPoint(x: 222.58, y: 215.88), controlPoint1: CGPoint(x: 230.85, y: 202.93), controlPoint2: CGPoint(x: 228.59, y: 207.29))
+        bezierPath.addCurve(to: CGPoint(x: 187.59, y: 242.97), controlPoint1: CGPoint(x: 214.15, y: 227.88), controlPoint2: CGPoint(x: 202.27, y: 242.87))
+        bezierPath.addCurve(to: CGPoint(x: 153.4, y: 235.12), controlPoint1: CGPoint(x: 174.52, y: 243.08), controlPoint2: CGPoint(x: 171.15, y: 234.98))
+        bezierPath.addCurve(to: CGPoint(x: 118.89, y: 243), controlPoint1: CGPoint(x: 135.67, y: 235.2), controlPoint2: CGPoint(x: 131.97, y: 243.13))
+        bezierPath.addCurve(to: CGPoint(x: 84.53, y: 217.38), controlPoint1: CGPoint(x: 104.19, y: 242.87), controlPoint2: CGPoint(x: 92.95, y: 229.37))
+        bezierPath.addCurve(to: CGPoint(x: 73.03, y: 123.39), controlPoint1: CGPoint(x: 60.96, y: 183.77), controlPoint2: CGPoint(x: 58.47, y: 144.35))
+        bezierPath.addCurve(to: CGPoint(x: 114.94, y: 99.8), controlPoint1: CGPoint(x: 83.34, y: 108.53), controlPoint2: CGPoint(x: 99.63, y: 99.8))
+        bezierPath.addCurve(to: CGPoint(x: 153.21, y: 107.82), controlPoint1: CGPoint(x: 130.53, y: 99.8), controlPoint2: CGPoint(x: 140.33, y: 107.82))
+        bezierPath.addCurve(to: CGPoint(x: 191.37, y: 99.78), controlPoint1: CGPoint(x: 165.72, y: 107.82), controlPoint2: CGPoint(x: 173.33, y: 99.78))
+        bezierPath.addCurve(to: CGPoint(x: 229.71, y: 118.74), controlPoint1: CGPoint(x: 205, y: 99.78), controlPoint2: CGPoint(x: 219.41, y: 106.74))
+        bezierPath.addCurve(to: CGPoint(x: 235.53, y: 193.2), controlPoint1: CGPoint(x: 196.01, y: 136.05), controlPoint2: CGPoint(x: 201.49, y: 181.13))
+        bezierPath.close()
+        bezierPath.move(to: CGPoint(x: 177.67, y: 86.36))
+        bezierPath.addCurve(to: CGPoint(x: 187.4, y: 56), controlPoint1: CGPoint(x: 184.23, y: 78.47), controlPoint2: CGPoint(x: 189.22, y: 67.34))
+        bezierPath.addCurve(to: CGPoint(x: 156.89, y: 71.37), controlPoint1: CGPoint(x: 176.71, y: 56.68), controlPoint2: CGPoint(x: 164.2, y: 63.08))
+        bezierPath.addCurve(to: CGPoint(x: 146.91, y: 100.99), controlPoint1: CGPoint(x: 150.26, y: 78.93), controlPoint2: CGPoint(x: 144.77, y: 90.14))
+        bezierPath.addCurve(to: CGPoint(x: 177.67, y: 86.36), controlPoint1: CGPoint(x: 158.59, y: 101.34), controlPoint2: CGPoint(x: 170.67, y: 94.81))
+        bezierPath.close()
+        appleGrey.setFill()
+        bezierPath.fill()
         
         context.restoreGState()
 
@@ -7883,14 +7914,14 @@ public class Examples : NSObject {
         return imageOfKeyPadNumPad
     }
 
-    @objc dynamic public class func imageOfGlobeLoader(cycleProgress: CGFloat = 0) -> UIImage {
+    @objc dynamic public class func imageOfLogoLoader(cycleProgress: CGFloat = 0) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(CGSize(width: 300, height: 300), false, 0)
-            Examples.drawGlobeLoader(cycleProgress: cycleProgress)
+            Examples.drawLogoLoader(cycleProgress: cycleProgress)
 
-        let imageOfGlobeLoader = UIGraphicsGetImageFromCurrentImageContext()!
+        let imageOfLogoLoader = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
 
-        return imageOfGlobeLoader
+        return imageOfLogoLoader
     }
 
     @objc dynamic public class func imageOfBatteryDischargingStatus(batteryCharge: CGFloat = 0.5) -> UIImage {

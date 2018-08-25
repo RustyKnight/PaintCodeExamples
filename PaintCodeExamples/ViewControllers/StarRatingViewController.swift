@@ -22,16 +22,19 @@ class StarRatingViewController: UIViewController {
   @IBOutlet var starFour: UIImageView!
   @IBOutlet var starFive: UIImageView!
   
-  var starViews: [UIImageView] = []
+	@IBOutlet weak var layerImageView: UIImageView!
+	@IBOutlet weak var backgroundView: UIView!
+	
+	var starViews: [UIImageView] = []
   
   let emptyStar = StarKit.imageOfSingleStar(singleRate: Rating.empty.rawValue)
   let halfStar = StarKit.imageOfSingleStar(singleRate: Rating.half.rawValue)
   let fullStar = StarKit.imageOfSingleStar(singleRate: Rating.full.rawValue)
-  
-  var touchGesture: UITapGestureRecognizer!
 
   override func viewDidLoad() {
     super.viewDidLoad()
+		
+		backgroundView.layer.cornerRadius = 20
     
     starViews.append(starOne)
     starViews.append(starTwo)
@@ -43,21 +46,29 @@ class StarRatingViewController: UIViewController {
       view.image = emptyStar
     }
     
-    touchGesture = UITapGestureRecognizer(target: self, action: #selector(starTapped))
+		for star in starViews {
+			let touchGesture = UITapGestureRecognizer(target: self, action: #selector(starTapped))
+			star.addGestureRecognizer(touchGesture)
+		}
+		
+		layerImageView.image = StarKit.imageOfStarLayer
   }
   
   @objc func starTapped(tapGestureRecognizer: UITapGestureRecognizer) {
+		print("Touched me")
     guard let imageView = tapGestureRecognizer.view as? UIImageView else {
       return
     }
+		print("Touched image view")
     guard let index = indexOf(imageView) else {
       return
     }
+		print("Touched star at \(index)")
     for star in stride(from: starViews.count - 1, to: index, by: -1) {
       starViews[star].image = emptyStar
     }
     for star in 0..<index {
-      starViews[star].image = emptyStar
+      starViews[star].image = fullStar
     }
     if starViews[index].image == emptyStar {
       starViews[index].image = halfStar

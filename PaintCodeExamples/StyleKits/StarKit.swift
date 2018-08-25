@@ -15,6 +15,13 @@ import UIKit
 
 public class StarKit : NSObject {
 
+    //// Cache
+
+    private struct Cache {
+        static var imageOfStarLayer: UIImage?
+        static var starLayerTargets: [AnyObject]?
+    }
+
     //// Drawing Methods
 
     @objc dynamic public class func drawStarRating(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 252, height: 49), resizing: ResizingBehavior = .aspectFit, rating: CGFloat = 5) {
@@ -765,6 +772,115 @@ public class StarKit : NSObject {
 
     }
 
+    @objc dynamic public class func drawStarLayer(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 62, height: 48), resizing: ResizingBehavior = .aspectFit) {
+        //// General Declarations
+        let context = UIGraphicsGetCurrentContext()!
+        
+        //// Resize to Target Frame
+        context.saveGState()
+        let resizedFrame: CGRect = resizing.apply(rect: CGRect(x: 0, y: 0, width: 62, height: 48), target: targetFrame)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
+        context.scaleBy(x: resizedFrame.width / 62, y: resizedFrame.height / 48)
+
+
+        //// Color Declarations
+        let fillColor = UIColor(red: 0.000, green: 0.000, blue: 0.000, alpha: 1.000)
+        let color = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1.000)
+
+        //// Rectangle Drawing
+        let rectanglePath = UIBezierPath(rect: CGRect(x: 0, y: 0, width: 25, height: 25))
+        fillColor.setFill()
+        rectanglePath.fill()
+
+
+        //// Bezier 2 Drawing
+        let bezier2Path = UIBezierPath()
+        bezier2Path.move(to: CGPoint(x: 16.68, y: 36))
+        bezier2Path.addCurve(to: CGPoint(x: 16.23, y: 35.85), controlPoint1: CGPoint(x: 16.53, y: 36), controlPoint2: CGPoint(x: 16.38, y: 35.92))
+        bezier2Path.addCurve(to: CGPoint(x: 15.93, y: 35.02), controlPoint1: CGPoint(x: 16.01, y: 35.7), controlPoint2: CGPoint(x: 15.86, y: 35.32))
+        bezier2Path.addLine(to: CGPoint(x: 19.23, y: 22.61))
+        bezier2Path.addLine(to: CGPoint(x: 9.33, y: 14.52))
+        bezier2Path.addCurve(to: CGPoint(x: 9.03, y: 13.69), controlPoint1: CGPoint(x: 9.03, y: 14.37), controlPoint2: CGPoint(x: 8.95, y: 13.99))
+        bezier2Path.addCurve(to: CGPoint(x: 9.7, y: 13.16), controlPoint1: CGPoint(x: 9.1, y: 13.39), controlPoint2: CGPoint(x: 9.4, y: 13.16))
+        bezier2Path.addLine(to: CGPoint(x: 22.46, y: 12.48))
+        bezier2Path.addLine(to: CGPoint(x: 27.04, y: 0.45))
+        bezier2Path.addCurve(to: CGPoint(x: 27.79, y: 0), controlPoint1: CGPoint(x: 27.19, y: 0.23), controlPoint2: CGPoint(x: 27.49, y: 0))
+        bezier2Path.addCurve(to: CGPoint(x: 28.46, y: 0.45), controlPoint1: CGPoint(x: 28.09, y: 0), controlPoint2: CGPoint(x: 28.39, y: 0.23))
+        bezier2Path.addLine(to: CGPoint(x: 33.04, y: 12.48))
+        bezier2Path.addLine(to: CGPoint(x: 45.8, y: 13.16))
+        bezier2Path.addCurve(to: CGPoint(x: 46.47, y: 13.69), controlPoint1: CGPoint(x: 46.1, y: 13.16), controlPoint2: CGPoint(x: 46.4, y: 13.39))
+        bezier2Path.addCurve(to: CGPoint(x: 46.25, y: 14.52), controlPoint1: CGPoint(x: 46.55, y: 13.99), controlPoint2: CGPoint(x: 46.47, y: 14.29))
+        bezier2Path.addLine(to: CGPoint(x: 36.34, y: 22.61))
+        bezier2Path.addLine(to: CGPoint(x: 39.64, y: 35.02))
+        bezier2Path.addCurve(to: CGPoint(x: 39.34, y: 35.85), controlPoint1: CGPoint(x: 39.72, y: 35.32), controlPoint2: CGPoint(x: 39.64, y: 35.62))
+        bezier2Path.addCurve(to: CGPoint(x: 38.52, y: 35.85), controlPoint1: CGPoint(x: 39.12, y: 36), controlPoint2: CGPoint(x: 38.74, y: 36.08))
+        bezier2Path.addLine(to: CGPoint(x: 27.79, y: 28.89))
+        bezier2Path.addLine(to: CGPoint(x: 17.06, y: 35.85))
+        bezier2Path.addCurve(to: CGPoint(x: 16.68, y: 36), controlPoint1: CGPoint(x: 16.91, y: 36), controlPoint2: CGPoint(x: 16.83, y: 36))
+        bezier2Path.close()
+        color.setFill()
+        bezier2Path.fill()
+
+
+        //// Bezier Drawing
+        let bezierPath = UIBezierPath()
+        bezierPath.move(to: CGPoint(x: 37, y: 0))
+        bezierPath.addLine(to: CGPoint(x: 37, y: 0))
+        bezierPath.addCurve(to: CGPoint(x: 36.07, y: 0.65), controlPoint1: CGPoint(x: 36.59, y: 0), controlPoint2: CGPoint(x: 36.22, y: 0.26))
+        bezierPath.addLine(to: CGPoint(x: 29.9, y: 16.67))
+        bezierPath.addLine(to: CGPoint(x: 12.95, y: 17.55))
+        bezierPath.addLine(to: CGPoint(x: 12.95, y: 17.55))
+        bezierPath.addCurve(to: CGPoint(x: 12, y: 18.61), controlPoint1: CGPoint(x: 12.4, y: 17.58), controlPoint2: CGPoint(x: 11.97, y: 18.05))
+        bezierPath.addCurve(to: CGPoint(x: 12.37, y: 19.34), controlPoint1: CGPoint(x: 12.02, y: 18.89), controlPoint2: CGPoint(x: 12.15, y: 19.16))
+        bezierPath.addLine(to: CGPoint(x: 25.57, y: 30.22))
+        bezierPath.addLine(to: CGPoint(x: 21.23, y: 46.73))
+        bezierPath.addLine(to: CGPoint(x: 21.23, y: 46.73))
+        bezierPath.addCurve(to: CGPoint(x: 21.94, y: 47.97), controlPoint1: CGPoint(x: 21.09, y: 47.27), controlPoint2: CGPoint(x: 21.41, y: 47.82))
+        bezierPath.addCurve(to: CGPoint(x: 22.74, y: 47.84), controlPoint1: CGPoint(x: 22.21, y: 48.04), controlPoint2: CGPoint(x: 22.51, y: 47.99))
+        bezierPath.addLine(to: CGPoint(x: 37, y: 38.61))
+        bezierPath.addLine(to: CGPoint(x: 51.26, y: 47.84))
+        bezierPath.addLine(to: CGPoint(x: 51.26, y: 47.84))
+        bezierPath.addCurve(to: CGPoint(x: 52.64, y: 47.54), controlPoint1: CGPoint(x: 51.72, y: 48.14), controlPoint2: CGPoint(x: 52.34, y: 48.01))
+        bezierPath.addCurve(to: CGPoint(x: 52.77, y: 46.73), controlPoint1: CGPoint(x: 52.79, y: 47.3), controlPoint2: CGPoint(x: 52.84, y: 47.01))
+        bezierPath.addLine(to: CGPoint(x: 48.43, y: 30.22))
+        bezierPath.addLine(to: CGPoint(x: 61.63, y: 19.33))
+        bezierPath.addLine(to: CGPoint(x: 61.63, y: 19.34))
+        bezierPath.addCurve(to: CGPoint(x: 61.78, y: 17.92), controlPoint1: CGPoint(x: 62.06, y: 18.99), controlPoint2: CGPoint(x: 62.13, y: 18.35))
+        bezierPath.addCurve(to: CGPoint(x: 61.05, y: 17.55), controlPoint1: CGPoint(x: 61.6, y: 17.7), controlPoint2: CGPoint(x: 61.34, y: 17.56))
+        bezierPath.addLine(to: CGPoint(x: 44.1, y: 16.67))
+        bezierPath.addLine(to: CGPoint(x: 37.93, y: 0.64))
+        bezierPath.addLine(to: CGPoint(x: 37.93, y: 0.65))
+        bezierPath.addCurve(to: CGPoint(x: 37, y: 0), controlPoint1: CGPoint(x: 37.78, y: 0.26), controlPoint2: CGPoint(x: 37.41, y: 0))
+        bezierPath.close()
+        bezierPath.move(to: CGPoint(x: 37, y: 3.8))
+        bezierPath.addLine(to: CGPoint(x: 42.47, y: 18.01))
+        bezierPath.addLine(to: CGPoint(x: 42.47, y: 18.01))
+        bezierPath.addCurve(to: CGPoint(x: 43.35, y: 18.65), controlPoint1: CGPoint(x: 42.61, y: 18.38), controlPoint2: CGPoint(x: 42.95, y: 18.63))
+        bezierPath.addLine(to: CGPoint(x: 58.36, y: 19.43))
+        bezierPath.addLine(to: CGPoint(x: 46.67, y: 29.07))
+        bezierPath.addLine(to: CGPoint(x: 46.67, y: 29.07))
+        bezierPath.addCurve(to: CGPoint(x: 46.34, y: 30.11), controlPoint1: CGPoint(x: 46.37, y: 29.32), controlPoint2: CGPoint(x: 46.23, y: 29.73))
+        bezierPath.addLine(to: CGPoint(x: 50.18, y: 44.74))
+        bezierPath.addLine(to: CGPoint(x: 37.54, y: 36.56))
+        bezierPath.addLine(to: CGPoint(x: 37.55, y: 36.56))
+        bezierPath.addCurve(to: CGPoint(x: 36.47, y: 36.55), controlPoint1: CGPoint(x: 37.22, y: 36.35), controlPoint2: CGPoint(x: 36.8, y: 36.35))
+        bezierPath.addLine(to: CGPoint(x: 23.82, y: 44.74))
+        bezierPath.addLine(to: CGPoint(x: 27.67, y: 30.11))
+        bezierPath.addLine(to: CGPoint(x: 27.67, y: 30.11))
+        bezierPath.addCurve(to: CGPoint(x: 27.33, y: 29.07), controlPoint1: CGPoint(x: 27.77, y: 29.73), controlPoint2: CGPoint(x: 27.64, y: 29.32))
+        bezierPath.addLine(to: CGPoint(x: 15.64, y: 19.43))
+        bezierPath.addLine(to: CGPoint(x: 30.65, y: 18.65))
+        bezierPath.addLine(to: CGPoint(x: 30.65, y: 18.65))
+        bezierPath.addCurve(to: CGPoint(x: 31.54, y: 18.01), controlPoint1: CGPoint(x: 31.05, y: 18.63), controlPoint2: CGPoint(x: 31.39, y: 18.38))
+        bezierPath.addLine(to: CGPoint(x: 37, y: 3.8))
+        bezierPath.close()
+        fillColor.setFill()
+        bezierPath.fill()
+        
+        context.restoreGState()
+
+    }
+
     //// Generated Images
 
     @objc dynamic public class func imageOfSingleStar(singleRate: CGFloat = 0.5) -> UIImage {
@@ -775,6 +891,32 @@ public class StarKit : NSObject {
         UIGraphicsEndImageContext()
 
         return imageOfSingleStar
+    }
+
+    @objc dynamic public class var imageOfStarLayer: UIImage {
+        if Cache.imageOfStarLayer != nil {
+            return Cache.imageOfStarLayer!
+        }
+
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: 62, height: 48), false, 0)
+            StarKit.drawStarLayer()
+
+        Cache.imageOfStarLayer = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+
+        return Cache.imageOfStarLayer!
+    }
+
+    //// Customization Infrastructure
+
+    @objc @IBOutlet dynamic var starLayerTargets: [AnyObject]! {
+        get { return Cache.starLayerTargets }
+        set {
+            Cache.starLayerTargets = newValue
+            for target: AnyObject in newValue {
+                let _ = target.perform(NSSelectorFromString("setImage:"), with: StarKit.imageOfStarLayer)
+            }
+        }
     }
 
 
