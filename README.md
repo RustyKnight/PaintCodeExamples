@@ -6,4 +6,4 @@ Examples of some of the style kits I've created through [PaintCodeApp](https://w
 
 |![](Snapshots/Stars.gif)|![](Snapshots/Battery.gif)|![](Snapshots/InfinateWait.gif)|
 |![](Snapshots/DialPad01.gif)|![](Snapshots/DialPad02.gif)|![](Snapshots/DialPad03.gif)|
-|![](Snapshots/SplitImages.png)|||
+![](Snapshots/SplitImages.png)
