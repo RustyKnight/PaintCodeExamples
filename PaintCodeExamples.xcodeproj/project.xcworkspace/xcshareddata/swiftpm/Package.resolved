@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "supersimpleanimatorkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/RustyKnight/SuperSimpleAnimatorKit",
+      "state" : {
+        "revision" : "9b99340bec628b72523764a388229db30753d64f",
+        "version" : "1.0.2"
+      }
+    }
+  ],
+  "version" : 2
+}

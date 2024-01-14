@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,11 +15,10 @@
 		702AF2902131037C0020F432 /* Examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AF28E2131037C0020F432 /* Examples.swift */; };
 		702AF2912131037C0020F432 /* StarKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AF28F2131037C0020F432 /* StarKit.swift */; };
 		702AF293213114530020F432 /* StatusBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AF292213114530020F432 /* StatusBarViewController.swift */; };
-		702AF295213115C60020F432 /* AnimatorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702AF294213115C60020F432 /* AnimatorKit.framework */; };
-		702AF296213115C60020F432 /* AnimatorKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 702AF294213115C60020F432 /* AnimatorKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		702AF299213127F90020F432 /* LogoLoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AF298213127F90020F432 /* LogoLoaderViewController.swift */; };
 		702AF29B21312BD00020F432 /* MultiPartImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702AF29A21312BD00020F432 /* MultiPartImagesViewController.swift */; };
 		705BB5DB21321471008E0C71 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705BB5DA21321471008E0C71 /* IntroductionViewController.swift */; };
+		70890B992B53975E00E18D4A /* SuperSimpleAnimatorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 70890B982B53975E00E18D4A /* SuperSimpleAnimatorKit */; };
 		70C43BBE2130DEFC00323904 /* ExamplesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C43BBD2130DEFC00323904 /* ExamplesPageViewController.swift */; };
 		70C43BC42130E2A000323904 /* StarRatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C43BC32130E2A000323904 /* StarRatingViewController.swift */; };
 		70CF5E38213176B8008126F3 /* ActiveCallKeyPadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF5E37213176B8008126F3 /* ActiveCallKeyPadViewController.swift */; };
@@ -45,7 +44,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				702AF296213115C60020F432 /* AnimatorKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,7 +64,6 @@
 		702AF28E2131037C0020F432 /* Examples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Examples.swift; sourceTree = "<group>"; };
 		702AF28F2131037C0020F432 /* StarKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarKit.swift; sourceTree = "<group>"; };
 		702AF292213114530020F432 /* StatusBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarViewController.swift; sourceTree = "<group>"; };
-		702AF294213115C60020F432 /* AnimatorKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnimatorKit.framework; path = Carthage/Build/iOS/AnimatorKit.framework; sourceTree = "<group>"; };
 		702AF298213127F90020F432 /* LogoLoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoLoaderViewController.swift; sourceTree = "<group>"; };
 		702AF29A21312BD00020F432 /* MultiPartImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPartImagesViewController.swift; sourceTree = "<group>"; };
 		705BB5DA21321471008E0C71 /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
@@ -83,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				702AF295213115C60020F432 /* AnimatorKit.framework in Frameworks */,
+				70890B992B53975E00E18D4A /* SuperSimpleAnimatorKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,11 +97,11 @@
 		70290B172130CA340049CE4F = {
 			isa = PBXGroup;
 			children = (
-				702AF294213115C60020F432 /* AnimatorKit.framework */,
 				70290B472130CAC60049CE4F /* README.md */,
 				70290B222130CA350049CE4F /* PaintCodeExamples */,
 				70290B3B2130CA360049CE4F /* PaintCodeExamplesUITests */,
 				70290B212130CA350049CE4F /* Products */,
+				70890B972B53975E00E18D4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,6 +143,13 @@
 				702AF28F2131037C0020F432 /* StarKit.swift */,
 			);
 			path = StyleKits;
+			sourceTree = "<group>";
+		};
+		70890B972B53975E00E18D4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		70C43BBF2130E23200323904 /* ViewControllers */ = {
@@ -207,6 +211,9 @@
 			dependencies = (
 			);
 			name = PaintCodeExamples;
+			packageProductDependencies = (
+				70890B982B53975E00E18D4A /* SuperSimpleAnimatorKit */,
+			);
 			productName = PaintCodeExamples;
 			productReference = 70290B202130CA350049CE4F /* PaintCodeExamples.app */;
 			productType = "com.apple.product-type.application";
@@ -235,15 +242,18 @@
 		70290B182130CA340049CE4F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1520;
 				ORGANIZATIONNAME = "Shane Whitehead";
 				TargetAttributes = {
 					70290B1F2130CA340049CE4F = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1520;
 					};
 					70290B372130CA360049CE4F = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1520;
 						TestTargetID = 70290B1F2130CA340049CE4F;
 					};
 				};
@@ -257,6 +267,9 @@
 				Base,
 			);
 			mainGroup = 70290B172130CA340049CE4F;
+			packageReferences = (
+				70890B942B53974500E18D4A /* XCRemoteSwiftPackageReference "SuperSimpleAnimatorKit" */,
+			);
 			productRefGroup = 70290B212130CA350049CE4F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -372,6 +385,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -383,6 +397,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -433,6 +448,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -444,6 +460,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -479,7 +496,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.kaizen.PaintCodeExamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -501,7 +518,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.kaizen.PaintCodeExamples;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -520,7 +537,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.kaizen.PaintCodeExamplesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = PaintCodeExamples;
 			};
@@ -540,7 +557,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.kaizen.PaintCodeExamplesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = PaintCodeExamples;
 			};
@@ -577,6 +594,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		70890B942B53974500E18D4A /* XCRemoteSwiftPackageReference "SuperSimpleAnimatorKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RustyKnight/SuperSimpleAnimatorKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		70890B982B53975E00E18D4A /* SuperSimpleAnimatorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 70890B942B53974500E18D4A /* XCRemoteSwiftPackageReference "SuperSimpleAnimatorKit" */;
+			productName = SuperSimpleAnimatorKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 70290B182130CA340049CE4F /* Project object */;
 }

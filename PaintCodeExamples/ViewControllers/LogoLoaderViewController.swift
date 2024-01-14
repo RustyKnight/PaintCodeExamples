@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AnimatorKit
+import SuperSimpleAnimatorKit
 
 class LogoLoaderViewController: UIViewController {
 	
