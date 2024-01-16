@@ -14,6 +14,7 @@ class IntroductionViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        overrideUserInterfaceStyle = .light
 	}
 	
 	override func viewDidLayoutSubviews() {

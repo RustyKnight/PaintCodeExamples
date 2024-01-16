@@ -23,7 +23,8 @@ class StatusBarViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        overrideUserInterfaceStyle = .light
+
         dischargeAnimator = DurationAnimator(duration: 60.0)
         dischargeAnimator.delegate = DischargeDelegate(imageView: batteryDischargeImageView)
         chargeAnimator = DurationAnimator(duration: 60.0)

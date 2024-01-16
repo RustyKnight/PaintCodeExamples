@@ -18,6 +18,7 @@ class LogoLoaderViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        overrideUserInterfaceStyle = .light
 		logoImageView.image = Examples.imageOfLogoLoader()
 		animator = LinearAnimator()
 		animator.delegate = self

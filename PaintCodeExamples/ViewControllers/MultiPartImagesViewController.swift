@@ -20,7 +20,8 @@ class MultiPartImagesViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
+        overrideUserInterfaceStyle = .light
+
 		greenButton.setBackgroundImage(Examples.imageOfGreenRoundButton, for: [])
 		redButton.setBackgroundImage(Examples.imageOfSOSRoundButton, for: [])
 		greyButton.setBackgroundImage(Examples.imageOfRoundButton, for: [])

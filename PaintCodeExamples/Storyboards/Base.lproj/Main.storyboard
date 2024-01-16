@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Vd-IV-Z7Y">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Vd-IV-Z7Y">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -37,6 +37,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="bQn-b0-cR2" secondAttribute="height" multiplier="1:1" id="TbG-YI-dgN"/>
                                     <constraint firstAttribute="width" constant="50" id="fH2-Fh-FYy"/>
+                                    <constraint firstAttribute="width" secondItem="bQn-b0-cR2" secondAttribute="height" multiplier="1:1" id="fkE-Xc-Odx"/>
                                 </constraints>
                             </imageView>
                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="848-VN-j5A">
@@ -44,12 +45,14 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="02k-YQ-5dI"/>
                                     <constraint firstAttribute="width" secondItem="848-VN-j5A" secondAttribute="height" multiplier="1:1" id="VRo-76-iJR"/>
+                                    <constraint firstAttribute="width" secondItem="848-VN-j5A" secondAttribute="height" multiplier="1:1" id="uMY-DV-CV8"/>
                                 </constraints>
                             </imageView>
                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bwu-o4-JUD">
                                 <rect key="frame" x="104" y="308.5" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="bwu-o4-JUD" secondAttribute="height" multiplier="1:1" id="8Yq-MF-IRJ"/>
+                                    <constraint firstAttribute="width" secondItem="bwu-o4-JUD" secondAttribute="height" multiplier="1:1" id="PJr-3A-ttm"/>
                                     <constraint firstAttribute="width" constant="50" id="V6e-LI-ycB"/>
                                 </constraints>
                             </imageView>
@@ -58,10 +61,11 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="QGc-e6-PTS" secondAttribute="height" multiplier="1:1" id="4VR-qt-mqe"/>
                                     <constraint firstAttribute="width" constant="50" id="hmQ-nS-whC"/>
+                                    <constraint firstAttribute="width" secondItem="QGc-e6-PTS" secondAttribute="height" multiplier="1:1" id="oBG-EH-ALb"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simple Star Rating Single image with &quot;fill&quot; characteristics" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5RA-q2-G1d">
-                                <rect key="frame" x="44" y="235.5" width="287.5" height="41"/>
+                                <rect key="frame" x="44" y="235.5" width="287" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -98,7 +102,8 @@ The composite allows the background fill to be masked to the shape of the star</
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Klb-fj-Xwd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="QGc-e6-PTS" firstAttribute="leading" secondItem="bQn-b0-cR2" secondAttribute="trailing" constant="8" id="4tu-Tc-l1b"/>
                             <constraint firstItem="lbw-SU-kHe" firstAttribute="leading" secondItem="bwu-o4-JUD" secondAttribute="trailing" constant="8.5" id="6wW-jA-UH2"/>
@@ -106,23 +111,18 @@ The composite allows the background fill to be masked to the shape of the star</
                             <constraint firstItem="eBn-65-9p6" firstAttribute="leading" secondItem="xML-td-PsW" secondAttribute="trailing" constant="8" id="FJO-dF-YUa"/>
                             <constraint firstItem="bQn-b0-cR2" firstAttribute="leading" secondItem="lbw-SU-kHe" secondAttribute="trailing" constant="7.5" id="GoR-mE-h2U"/>
                             <constraint firstItem="eBn-65-9p6" firstAttribute="top" secondItem="xML-td-PsW" secondAttribute="top" id="MaL-wq-bmj"/>
-                            <constraint firstItem="bwu-o4-JUD" firstAttribute="width" secondItem="bwu-o4-JUD" secondAttribute="height" multiplier="1:1" id="PJr-3A-ttm"/>
                             <constraint firstItem="QGc-e6-PTS" firstAttribute="centerY" secondItem="bQn-b0-cR2" secondAttribute="centerY" id="VE6-h2-73F"/>
                             <constraint firstItem="xML-td-PsW" firstAttribute="leading" secondItem="848-VN-j5A" secondAttribute="leading" id="ZvR-0y-daf"/>
                             <constraint firstItem="bwu-o4-JUD" firstAttribute="leading" secondItem="848-VN-j5A" secondAttribute="trailing" constant="8" id="a3A-ok-cW1"/>
                             <constraint firstItem="xML-td-PsW" firstAttribute="top" secondItem="848-VN-j5A" secondAttribute="bottom" constant="32" id="aic-61-zsc"/>
                             <constraint firstItem="lbw-SU-kHe" firstAttribute="centerY" secondItem="YQq-FM-QcL" secondAttribute="centerY" id="dBU-u4-u3G"/>
                             <constraint firstItem="bQn-b0-cR2" firstAttribute="centerY" secondItem="lbw-SU-kHe" secondAttribute="centerY" id="fdw-KX-LSN"/>
-                            <constraint firstItem="bQn-b0-cR2" firstAttribute="width" secondItem="bQn-b0-cR2" secondAttribute="height" multiplier="1:1" id="fkE-Xc-Odx"/>
                             <constraint firstItem="lbw-SU-kHe" firstAttribute="centerX" secondItem="YQq-FM-QcL" secondAttribute="centerX" id="hWE-Ra-6hp"/>
                             <constraint firstItem="5RA-q2-G1d" firstAttribute="centerX" secondItem="YQq-FM-QcL" secondAttribute="centerX" id="jSr-po-YLO"/>
                             <constraint firstItem="bwu-o4-JUD" firstAttribute="centerY" secondItem="lbw-SU-kHe" secondAttribute="centerY" id="n5y-Uc-BTJ"/>
                             <constraint firstItem="848-VN-j5A" firstAttribute="centerY" secondItem="bwu-o4-JUD" secondAttribute="centerY" id="o7d-mF-fHo"/>
-                            <constraint firstItem="QGc-e6-PTS" firstAttribute="width" secondItem="QGc-e6-PTS" secondAttribute="height" multiplier="1:1" id="oBG-EH-ALb"/>
-                            <constraint firstItem="848-VN-j5A" firstAttribute="width" secondItem="848-VN-j5A" secondAttribute="height" multiplier="1:1" id="uMY-DV-CV8"/>
                             <constraint firstItem="lbw-SU-kHe" firstAttribute="top" secondItem="5RA-q2-G1d" secondAttribute="bottom" constant="32" id="yh6-9c-anH"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Klb-fj-Xwd"/>
                     </view>
                     <connections>
                         <outlet property="backgroundView" destination="xML-td-PsW" id="yPX-hW-GKp"/>
@@ -147,7 +147,7 @@ The composite allows the background fill to be masked to the shape of the star</
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Battery charging (text)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Me1-qK-p7g">
-                                <rect key="frame" x="101.5" y="349.5" width="172.5" height="20.5"/>
+                                <rect key="frame" x="102" y="349.5" width="171.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -160,7 +160,7 @@ The composite allows the background fill to be masked to the shape of the star</
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Signal Strength" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVG-hK-Cw1">
-                                <rect key="frame" x="129" y="469" width="117.5" height="20.5"/>
+                                <rect key="frame" x="129" y="469" width="117" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -179,7 +179,7 @@ The composite allows the background fill to be masked to the shape of the star</
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Battery (dis)charge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JlA-oN-NBC">
-                                <rect key="frame" x="114" y="183.5" width="147.5" height="20.5"/>
+                                <rect key="frame" x="114.5" y="183.5" width="146.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -211,12 +211,13 @@ The composite allows the background fill to be masked to the shape of the star</
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Various animated status icons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3a-nf-CkF">
-                                <rect key="frame" x="73" y="52" width="229" height="21"/>
+                                <rect key="frame" x="74" y="52" width="227.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="s7K-sk-dYE"/>
                         <color key="backgroundColor" red="0.59999999999999998" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="P3a-nf-CkF" firstAttribute="centerX" secondItem="s7K-sk-dYE" secondAttribute="centerX" id="3x1-rG-Tkd"/>
@@ -245,7 +246,6 @@ The composite allows the background fill to be masked to the shape of the star</
                             <constraint firstItem="35q-pE-1vf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="s7K-sk-dYE" secondAttribute="leading" constant="8" id="wGZ-iP-xbH"/>
                             <constraint firstItem="s7K-sk-dYE" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="35q-pE-1vf" secondAttribute="trailing" constant="8" id="ygT-YM-McV"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="s7K-sk-dYE"/>
                     </view>
                     <connections>
                         <outlet property="batteryChargeImageView" destination="iGt-Ua-fNg" id="ZPO-bI-nqp"/>
@@ -282,6 +282,7 @@ The colors are controlled from a master color, so changing it, will change all t
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="xnp-65-tpb"/>
                         <color key="backgroundColor" red="0.74901960784313726" green="0.74901960784313726" blue="0.74901960784313726" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Jad-yy-X3t" firstAttribute="centerX" secondItem="2UM-ks-Xbs" secondAttribute="centerX" id="2Gv-KD-TWw"/>
@@ -291,7 +292,6 @@ The colors are controlled from a master color, so changing it, will change all t
                             <constraint firstItem="63p-gR-wUG" firstAttribute="top" secondItem="Jad-yy-X3t" secondAttribute="bottom" constant="32" id="j2Q-ZN-IMh"/>
                             <constraint firstItem="Jad-yy-X3t" firstAttribute="centerY" secondItem="2UM-ks-Xbs" secondAttribute="centerY" id="r9l-VZ-VAy"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="xnp-65-tpb"/>
                     </view>
                     <connections>
                         <outlet property="logoImageView" destination="Jad-yy-X3t" id="kRD-ls-CEi"/>
@@ -360,30 +360,30 @@ The colors are controlled from a master color, so changing it, will change all t
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gEe-kJ-gy8">
-                                <rect key="frame" x="99" y="252.5" width="177" height="162"/>
+                                <rect key="frame" x="99.5" y="252.5" width="176" height="162"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xng-5s-gjl">
-                                        <rect key="frame" x="0.0" y="0.0" width="177" height="162"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="176" height="162"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="q7x-h4-Weo">
-                                        <rect key="frame" x="16" y="16" width="145" height="130"/>
+                                        <rect key="frame" x="16" y="16" width="144" height="130"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ssj-cX-4gZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="145" height="38"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="144" height="38"/>
                                                 <inset key="contentEdgeInsets" minX="16" minY="8" maxX="16" maxY="8"/>
                                                 <state key="normal" title="Press for Go">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyS-Sk-wyb">
-                                                <rect key="frame" x="0.0" y="46" width="145" height="38"/>
+                                                <rect key="frame" x="0.0" y="46" width="144" height="38"/>
                                                 <inset key="contentEdgeInsets" minX="16" minY="8" maxX="16" maxY="8"/>
                                                 <state key="normal" title="Press for stop">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hF-Q1-491">
-                                                <rect key="frame" x="0.0" y="92" width="145" height="38"/>
+                                                <rect key="frame" x="0.0" y="92" width="144" height="38"/>
                                                 <inset key="contentEdgeInsets" minX="16" minY="8" maxX="16" maxY="8"/>
                                                 <state key="normal" title="Normal">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -405,12 +405,13 @@ The colors are controlled from a master color, so changing it, will change all t
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example of multipart/sliced images" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Zt-Pt-J8g">
-                                <rect key="frame" x="54" y="52" width="267.5" height="20.5"/>
+                                <rect key="frame" x="55" y="52" width="265.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="xFD-yQ-FY9"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="64I-KZ-bSg" firstAttribute="width" secondItem="6SS-H7-pOG" secondAttribute="width" multiplier="0.75" id="17I-zB-GxT"/>
@@ -427,7 +428,6 @@ The colors are controlled from a master color, so changing it, will change all t
                             <constraint firstItem="xFD-yQ-FY9" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7Zt-Pt-J8g" secondAttribute="trailing" constant="8" id="nbX-yJ-Ch0"/>
                             <constraint firstItem="7Zt-Pt-J8g" firstAttribute="top" secondItem="xFD-yQ-FY9" secondAttribute="top" constant="32" id="rdE-2k-qVu"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="xFD-yQ-FY9"/>
                     </view>
                     <connections>
                         <outlet property="backgroundImageView" destination="xng-5s-gjl" id="t7x-L7-qyy"/>
@@ -515,12 +515,13 @@ The colors are controlled from a master color, so changing it, will change all t
                                 <color key="backgroundColor" red="0.9552378654" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stylised dial pad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmo-rG-HQ9">
-                                <rect key="frame" x="124.5" y="52" width="126" height="21"/>
+                                <rect key="frame" x="125" y="52" width="125" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Sym-0t-Kx7"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="HXp-Zp-Lzr" firstAttribute="leading" secondItem="mUc-iZ-ZN3" secondAttribute="trailing" id="1bj-lm-yUr"/>
@@ -585,7 +586,6 @@ The colors are controlled from a master color, so changing it, will change all t
                             <constraint firstItem="E8M-rt-DUG" firstAttribute="leading" secondItem="u6B-LS-0QG" secondAttribute="trailing" id="ygh-eM-dg5"/>
                             <constraint firstItem="UcA-qA-pHY" firstAttribute="leading" secondItem="OC8-0f-YXy" secondAttribute="trailing" id="z7j-1J-rst"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Sym-0t-Kx7"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MAs-Ck-p5z" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -653,6 +653,7 @@ The colors are controlled from a master color, so changing it, will change all t
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="zFo-yn-nV8"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ZOZ-oj-DG3" firstAttribute="height" secondItem="OdO-MI-dKK" secondAttribute="height" id="3M9-5h-x6Z"/>
@@ -706,7 +707,6 @@ The colors are controlled from a master color, so changing it, will change all t
                             <constraint firstItem="Qkn-wa-HxN" firstAttribute="height" secondItem="OdO-MI-dKK" secondAttribute="height" id="wbh-hx-gFh"/>
                             <constraint firstItem="91J-DH-uXe" firstAttribute="height" secondItem="OdO-MI-dKK" secondAttribute="height" id="weO-Ak-yYE"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="zFo-yn-nV8"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KL0-hQ-j6U" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -768,12 +768,13 @@ The colors are controlled from a master color, so changing it, will change all t
                                 <rect key="frame" x="225" y="446" width="75" height="75"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modern Style Dial Pad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRu-2D-De7">
-                                <rect key="frame" x="103" y="52" width="169" height="21"/>
+                                <rect key="frame" x="103.5" y="52" width="168" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="DDZ-D7-0lS"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="uCg-Cj-FfM" firstAttribute="width" secondItem="zzj-c9-iv2" secondAttribute="width" id="1gI-vW-F8I"/>
@@ -833,7 +834,6 @@ The colors are controlled from a master color, so changing it, will change all t
                             <constraint firstItem="uCg-Cj-FfM" firstAttribute="height" secondItem="aUg-Xe-dHR" secondAttribute="height" id="wsA-OR-2zd"/>
                             <constraint firstItem="uCg-Cj-FfM" firstAttribute="top" secondItem="Igz-ph-MEJ" secondAttribute="bottom" id="yFB-hp-NCe"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="DDZ-D7-0lS"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="itQ-r1-d1x" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -849,8 +849,8 @@ The colors are controlled from a master color, so changing it, will change all t
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UZu-bg-dVP">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <mutableString key="text">PaintCode is a vector based painting program that can export images in resolution independent sizes (x1, x2, x3).
 
 The true power of PaintCode though, is its ability to export the vector images as code!  This not only provides true resolution independence (future proofing), it also reduces the bundle size.  If that wasn’t enough, you can also define parameters that can modify the state of the images at runtime
@@ -858,19 +858,20 @@ The true power of PaintCode though, is its ability to export the vector images a
 This is just a small number of examples of some of things I've been able to with Paintcode
 
 https://www.paintcodeapp.com</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="rJq-I6-s6J"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="UZu-bg-dVP" firstAttribute="leading" secondItem="pqL-KA-gj2" secondAttribute="leading" id="AjX-ke-ZkJ"/>
-                            <constraint firstItem="UZu-bg-dVP" firstAttribute="top" secondItem="rJq-I6-s6J" secondAttribute="top" id="JGz-Zp-VaI"/>
+                            <constraint firstItem="UZu-bg-dVP" firstAttribute="top" secondItem="pqL-KA-gj2" secondAttribute="top" id="JGz-Zp-VaI"/>
                             <constraint firstAttribute="trailing" secondItem="UZu-bg-dVP" secondAttribute="trailing" id="PuW-Qc-dGx"/>
                             <constraint firstAttribute="bottom" secondItem="UZu-bg-dVP" secondAttribute="bottom" id="hyj-Xd-jVg"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="rJq-I6-s6J"/>
                     </view>
                     <connections>
                         <outlet property="textView" destination="UZu-bg-dVP" id="NXZ-nw-hIK"/>
@@ -881,4 +882,12 @@ https://www.paintcodeapp.com</mutableString>
             <point key="canvasLocation" x="1567" y="-1088"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
